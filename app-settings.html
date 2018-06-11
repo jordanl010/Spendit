@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Spend.it</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/appstyles.css" rel="stylesheet">
+    <link href="css/appsettings.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-1" id="sidenav">
+                <div id="menunavwrapper">
+                    <a href="index.html">
+                        <li class="menunav">
+                            <img id="menunavimg" class="" src="img/spendit_logo_white.png" />
+                        </li>
+                    </a>
+                    <a href="app-home.html">
+                        <li class="menunav">
+                            <div class="menunavicon">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </div>
+                            HOME
+                        </li>
+                    </a>
+                    <a href="app-settings.html">
+                        <li class="menunav">
+                            <div class="menunavicon">
+                                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                            </div>
+
+                            Spendit
+                        </li>
+                    </a>
+                    <a href="app-profile.html">
+                        <li class="menunav">
+                            <div class="menunavicon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            PROFILE
+                        </li>
+                    </a>
+                    <a href="index.html">
+                        <li class="menunav" id="lastmenu">
+                            <div class="menunavicon">
+                                <i class="fa fa-power-off" aria-hidden="true"></i>
+                            </div>
+                            LOGOUT
+                        </li>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-11">
+                <div class="row" id="context-header">
+                    <div class="col-lg-12">
+                        <div class="pull-left"> > SETTINGS</div>
+                        <div class="pull-right">John Smith</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="home-widget" style="min-height:750px;">
+                            <div class="home-widget-title">
+                                Your Spendit Goal!
+                            </div>
+                            <div class="home-widget-body text-center">
+                                <div>
+                                    <div id="goal-img" class="goal-label">
+                                        <span style="margin-bottom:25px;">Current Goal:</span>
+                                        <a href="app-settings.html">
+
+                                            <a href="" data-toggle="modal" data-target="#goalSelectionModal">
+                                                <span class="fa fa-pencil"></span>
+                                            </a>
+
+                                        </a>
+
+                                        <br>
+                                        <img class="col-lg-4 img-responsive" src="img/goal.jpg" />
+                                    </div>
+                                    <div id="goal-details" class="goal-label">
+                                        <span style="margin-bottom:25px;">Goal Price:</span>
+
+                                        <br> $64.99
+                                    </div>
+                                    <br>
+                                    <div id="spendit-history">
+
+                                        <div>
+                                            We will do out best to use your savings goal to buy this item at stores:
+                                            <br> Macys, GNC, Etc..
+                                            <span class="fa fa-pencil"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-widget">
+                            <div class="home-widget-title">
+                                Spendit Settings
+                            </div>
+                            <div class="home-widget-body text-center" id="rounding-amt-body">
+                                <h3>Rounding Amount:</h3>
+                                <div class="row">
+                                    <div class=" col-lg-2 rounding-wrapper">
+                                        $0.50
+                                    </div>
+                                    <div class="  col-lg-2 rounding-wrapper">
+                                        $1.00
+                                    </div>
+                                    <div class="  col-lg-2 rounding-wrapper" id="round-amt-active">
+                                        $5.00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="home-widget text-center">
+                            <div class="home-widget-title">
+                                Customize your Spendit shopping
+                            </div>
+                            <div class="home-widget-body">
+                                <div class="goal-label"> Favorited Shopping Locations:
+                                    <div style="font-size:18px;">Macys, H&M, Rue21</div>
+                                </div>
+                                <div class="goal-label"> Favorited Shopping Categories:
+                                    <div style="font-size:18px;">Technology, Fashion, Clothing, Shoes</div>
+                                </div>
+
+                                <div class="goal-label">
+                                    <a href="" data-toggle="modal" data-target="#shoppingTrendsmodal">Reset Your Shopping Trend:</a>
+                                    <i class="fa fa-gift" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="shoppingTrendsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Customize Your Shopping</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Survey will go here:
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="goalSelectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Customize Your Goal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Goal selection will go here:
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Bootstrap core JavaScript -->
+            <script src="vendor/jquery/jquery.min.js "></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+            <!-- Plugin JavaScript -->
+            <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
+            <script src="vendor/magnific-popup/jquery.magnific-popup.min.js "></script>
+
+            <!-- Contact Form JavaScript -->
+            <script src="js/jqBootstrapValidation.js "></script>
+            <script src="js/gauge.min.js "></script>
+
+            <script>
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+  font-family: 'Montserrat';
+  background-color: #f0f0f0 !important;
+}
+
+#sidenav {
+  height: 100vh;
+  background-color: #4682b4;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: fixed;
+}
+
+#sidenav {}
+
+#sidenav li {
+  list-style: none;
+  height: 110px;
+  text-align: center;
+  /* color: black; */
+  color: WHITE;
+}
+
+#sidenav a:hover {
+  text-decoration: none;
+}
+
+.menunavicon * {
+  font-size: 3em;
+}
+
+#lastmenu {
+  position: absolute;
+  bottom: 0;
+  margin-left: 45px;
+}
+
+#menunavimg {
+  margin-top: 20px;
+  width: 145px;
+}
+
+#context-header {
+  margin-bottom: 40px;
+  font-size: 1.9em;
+}
+
+.home-widget {
+  background-color: white;
+  min-height: 400px;
+}
+
+.home-widget-title {
+  background-color: #18bc9c;
+  min-height: 40px;
+  font-size: 1.9em;
+  padding: 10px;
+}
